@@ -1,0 +1,6 @@
+label, input[text], input[email], select {
+    display: block;
+}
+span {
+    color: #ff0000;
+}

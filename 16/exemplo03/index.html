@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exemplo 03</title>
+</head>
+<body>
+    <h1>Trabalhando com formulários - outros tipos</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" size="50" required autofocus><span>(*)</span>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" size="50" required><span>(*)</span>
+        <label for="tipo">Tipo</label>
+        <select name="tipo" id="tipo">
+            <option>Elogio</option>
+            <option>Sugestão</option>
+            <option>Reclamação</option>
+        </select>
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" cols="50" rows="5"></textarea>
+        <hr>
+        <label for="anexo">Anexo</label>
+        <input type="file" name="anexo" id="anexo" accept=".pdf">
+        <hr>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
