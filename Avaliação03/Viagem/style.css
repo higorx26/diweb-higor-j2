@@ -1,0 +1,332 @@
+/* Paleta de Cores Limpas e Naturais: */
+/* Principal (Header, Footer, Destaque): #4CAF50 (Verde Limão/Natural) */
+/* Secundária/Acento (Botões, Preços, Linha): #FF9800 (Laranja Suave) */
+/* Fundo: #FAFAFA (Branco Quase Puro) */
+/* Texto: #424242 (Cinza Escuro Suave) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif; /* Fonte Moderna */
+    background-color: #FAFAFA; /* Fundo Limpo */
+    color: #424242; /* Texto Suave */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+    width: 100%;
+}
+
+h2 {
+    color: #4CAF50; /* Cor principal */
+    border-bottom: 2px solid #FF9800; /* Cor de acento suave */
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    font-size: 2.2em;
+    font-weight: 300; /* Fonte mais leve */
+}
+
+header {
+    background-color: #4CAF50; /* Cor principal */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s, border-radius 0.3s;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #FF9800; /* Cor de acento */
+    color: white;
+}
+
+/* Banner da Página Inicial (index.html) */
+#hero-banner {
+    background-color: #E8F5E9; /* Verde muito claro para o banner */
+    padding: 60px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#hero-banner h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #4CAF50;
+    border-bottom: none;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+#hero-banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-principal {
+    background-color: #FF9800; /* Cor de acento */
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px; /* Botões mais arredondados */
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: 500;
+}
+
+.btn-principal:hover {
+    background-color: #F57C00; /* Laranja ligeiramente mais escuro */
+    transform: translateY(-2px);
+}
+
+.form-container {
+    max-width: 400px; /* Largura levemente menor */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #4CAF50; /* Destaque lateral */
+}
+
+.form-container h2 {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #4CAF50;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #E0E0E0; /* Borda mais suave */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #FF9800;
+    outline: none;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Estilo para Cards de Oferta */
+.oferta-card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1 1 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.oferta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.oferta-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.oferta-card h3 {
+    color: #424242;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.oferta-card p:last-of-type { 
+    font-weight: 700;
+    color: #FF9800; /* Cor acento (Laranja Suave) */
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.oferta-card .btn-principal {
+    margin-top: auto; 
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo para Tabela de Pacotes (pacotes.html) */
+.tabela-pacotes {
+    width: 100%;
+    border-collapse: separate; /* Para usar border-radius */
+    border-spacing: 0;
+    margin: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px; /* Borda arredondada na tabela */
+    overflow: hidden; /* Para garantir que o arredondamento funcione */
+}
+
+.tabela-pacotes thead tr {
+    background-color: #4CAF50; /* Cor principal */
+    color: white;
+    text-align: left;
+}
+
+.tabela-pacotes th,
+.tabela-pacotes td {
+    padding: 15px;
+    /* Remove as bordas tradicionais */
+}
+
+.tabela-pacotes th:first-child { border-top-left-radius: 8px; }
+.tabela-pacotes th:last-child { border-top-right-radius: 8px; }
+
+.tabela-pacotes tbody tr {
+    transition: background-color 0.2s;
+}
+
+.tabela-pacotes tbody tr:nth-of-type(even) {
+    background-color: #F5F5F5; /* Fundo cinza claro para linhas pares */
+}
+
+.tabela-pacotes tbody tr:hover {
+    background-color: #E0E0E0; /* Destaque no hover */
+}
+
+.tabela-pacotes td {
+    border-bottom: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+}
+
+.tabela-pacotes tr:last-child td {
+    border-bottom: none; /* Remove a borda inferior da última linha */
+}
+
+.tabela-pacotes td:last-child {
+    border-right: none;
+}
+
+/* Estilo responsivo para Tabela (Mobile) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .tabela-pacotes {
+        border-radius: 0; /* Remove o border-radius no mobile para melhor adaptação */
+    }
+
+    .tabela-pacotes thead {
+        display: none;
+    }
+
+    .tabela-pacotes, .tabela-pacotes tbody, .tabela-pacotes tr, .tabela-pacotes td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabela-pacotes tr {
+        margin-bottom: 20px;
+        border: 1px solid #E0E0E0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+    }
+
+    .tabela-pacotes td {
+        text-align: right;
+        padding-left: 55%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .tabela-pacotes td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        text-align: left;
+        color: #4CAF50;
+    }
+
+    .tabela-pacotes tr:last-child td {
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .tabela-pacotes tr:last-child td:last-child {
+        border-bottom: none;
+    }
+}
